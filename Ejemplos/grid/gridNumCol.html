@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container fluid</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid mt-3">
+      <h1>Two Unequal Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>
+        The columns will automatically stack on top of each other when the
+        screen is less than 576px wide.
+      </p>
+      <div class="row">
+        <div class="col-md-4 p-3 bg-primary text-white">col-md-4</div>
+        <div class="col-md-8 p-3 bg-dark text-white">col-md-8</div>
+      </div>
+      <h1 class="mt-5">Excediendo 12</h1>
+      <p>
+        8 + 8 son 16, por lo que al superar 12 no se colocan contiguos
+        horizontalmente
+      </p>
+      <div class="row">
+        <div class="col-md-8 p-3 bg-primary text-white">col-md-8</div>
+        <div class="col-md-8 p-3 bg-dark text-white">col-md-8</div>
+      </div>
+    </div>
+  </body>
+</html>
